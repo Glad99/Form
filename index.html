@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <h1>User settings</h1>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <hr>
+        <div class="second">
+            <h3>Personal info</h3>
+            <div class="box1">
+                <div class="input">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                </div>
+                <div class="count">
+                    <select name="country" id="country">
+                        <option disabled selected hidden id="count">Country</option>
+                        <option value="canada">Canada</option>
+                        <option value="london">London</option>
+                        <option value="nigeria">Nigeria</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="third">
+            <h3>Notifications</h3>
+            <div class="weekly">
+                <p>weekly reports</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="pull">
+                <p>Pull requests</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="deploy">
+                <p>Deployments triggers</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            </div>
+            <hr>
+            <h3>Security</h3>
+            <div class="run">
+                <p>Run security check upon log in</p>
+                <input type="checkbox" name="run">
+        </div>
+        <div class="slide2">
+            <p>Less</p>
+            <!-- Rounded switch -->
+            <label class="switch" id="slider2">
+                <input type="checkbox" />
+                <span class="slider round" id="slider-round"></span>
+            </label>
+            <p>More</p>
+        </div>
+        <hr>
+        <div class="fourth">
+            <button class="btn1">Save</button>
+            <button class="btn2">Cancel</button>
+        </div>
+    </div>
+    <script src="index.js" ></script>
+</body>
+</html>
