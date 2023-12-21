@@ -14,12 +14,6 @@ form.addEventListener('submit', (e)=>{
     const security = document.getElementById('security')
     const range = document.getElementById('myslider')
 
-
-    if(firstName.value !== ""  || lastName.value !== "" || country.value !==
-    ''){
-        confirm('Are you sure you want to submit?')
-    }
-
     console.log(week.checked, pull.checked, deploy.checked, security.checked, range.value)
     console.log('First Name:', firstName.value)
     console.log('Last Name:', lastName.value)
@@ -29,5 +23,20 @@ form.addEventListener('submit', (e)=>{
     console.log('Deployment:', deploy.checked)
     console.log('Run security check upon login:', security.checked)
 
+
+
+    if(firstName.value !== ""  || lastName.value !== "" || country.value !==
+    ''){
+        confirm('Are you sure you want to submit?')
+        firstName.value = ""
+        lastName.value = ""
+        country.value = ""
+        week.checked = ""
+        pull.checked = ""
+        deploy.checked = ""
+        security.checked = "true"
+    }
 })
+
+    
     
