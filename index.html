@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="main">
+    <form id="form">
         <div class="first">
-            <h1>User settings</h1>
+            <h2>User Settings</h2>
             <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
         <hr>
         <div class="second">
-            <h3>Personal info</h3>
+            <h4>Personal info</h4>
             <div class="box1">
                 <div class="input">
-                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
-                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name" required="" aria-required="">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required="" aria-required="">
                 </div>
                 <div class="count">
-                    <select name="country" id="country">
-                        <option disabled selected hidden id="count">Country</option>
+                    <select name="country" id="country" required="" aria-required="">
+                        <option value="" selected hidden id="count">Country</option>
                         <option value="canada">Canada</option>
                         <option value="london">London</option>
                         <option value="nigeria">Nigeria</option>
@@ -32,50 +32,46 @@
         </div>
         <hr>
         <div class="third">
-            <h3>Notifications</h3>
+            <h4>Notifications</h4>
             <div class="weekly">
                 <p>weekly reports</p>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="week">
                     <span class="slider round"></span>
                 </label>
             </div>
             <div class="pull">
                 <p>Pull requests</p>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="pull">
                     <span class="slider round"></span>
                 </label>
             </div>
             <div class="deploy">
                 <p>Deployments triggers</p>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="deploy">
                     <span class="slider round"></span>
                 </label>
             </div>
             </div>
             <hr>
-            <h3>Security</h3>
+            <h4>Security</h4>
             <div class="run">
                 <p>Run security check upon log in</p>
-                <input type="checkbox" name="run">
+                <input type="checkbox" name="run" id="security">
         </div>
-        <div class="slide2">
-            <p>Less</p>
-            <!-- Rounded switch -->
-            <label class="switch" id="slider2">
-                <input type="checkbox" />
-                <span class="slider round" id="slider-round"></span>
-            </label>
-            <p>More</p>
+        <div>
+            <label for="slider">Less</label>
+                <input type="range" id="myslider" name="slider" min="0" max="100" value="50">
+                <span id="sliderValue">More</span>
         </div>
         <hr>
         <div class="fourth">
-            <button class="btn1">Save</button>
+            <button type="submit" class="btn1" id="save">Save</button>
             <button class="btn2">Cancel</button>
         </div>
-    </div>
+    </form>
     <script src="index.js" ></script>
 </body>
 </html>
