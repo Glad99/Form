@@ -23,8 +23,6 @@ form.addEventListener('submit', (e)=>{
     console.log('Deployment:', deploy.checked)
     console.log('Run security check upon login:', security.checked)
 
-
-
     if(firstName.value !== ""  || lastName.value !== "" || country.value !==
     ''){
         confirm('Are you sure you want to submit?')
@@ -37,6 +35,3 @@ form.addEventListener('submit', (e)=>{
         security.checked = "true"
     }
 })
-
-    
-    
