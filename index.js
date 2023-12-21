@@ -19,9 +19,6 @@ form.addEventListener('submit', (e)=>{
     ''){
         confirm('Are you sure you want to submit?')
     }
-    else{
-        alert('form submitted')
-    }
 
     console.log(week.checked, pull.checked, deploy.checked, security.checked, range.value)
     console.log('First Name:', firstName.value)
